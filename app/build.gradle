@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.calc'
+    namespace 'calc'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.calc"
+        applicationId "my.simplistic.calc"
         minSdk 24
         targetSdk 33
         versionCode 1
@@ -23,6 +23,7 @@ android {
     buildTypes {
         release {
             minifyEnabled false
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }

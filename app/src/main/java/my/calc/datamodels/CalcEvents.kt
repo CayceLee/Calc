@@ -1,0 +1,12 @@
+package my.calc.datamodels
+
+import my.calc.datamodels.CalcOperation
+
+sealed class CalcEvents {
+    data class Num(val number: Int): CalcEvents()
+    object Clear: CalcEvents()
+    object Delete: CalcEvents()
+    object Deci: CalcEvents()
+    object Calculate: CalcEvents()
+    data class Operation(val operation: CalcOperation): CalcEvents()
+}
